@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>My Second Page</title>
+	
+	<title>My Dynamic Details</title>
+	<script type="text/javascript">
+	
+	function addParagraphText()
+	{
+	    document.getElementById("para").innerHTML = "Thanks for adding text!";
+	}
+	</script>
+	<script type="text/javascript">
+	
+	function displayInput()
+	{
+		var testInput = document.getEleementById("name").value;
+		
+		if(testInput.length == 0)
+		{
+			document.getElementById("para").innerHTML = "Hey,you didn't type anything!"
+		}
+		else
+		document.getElementById("ppara").innerHTML = testInput;
+	}
+	</script>
+	
+			
+	
+</head>
+
+<body>
+
+
+<H1 style="color:blue;">Experimenting with Links and Text</H1>
+
+<a href="http://www.google.com" >Go to Google</a>
+
+<p style="color:blue;font-size:120%;">Practicing HTML is fun.So far we have learned<strong>HTML</strong> is a language <em>made of tags </em>that can do a lot with just some basic tags. We can learn about new tags when we need them.</p> 
+
+<BR/>
+
+<img src="lamborghini.png"/>
+
+<BR/>
+
+<H1>HTML Tables and HTML Comments</H1>
+
+<table border="2" style="border:solid;" >
+<tr>
+<td>Day 1</td><td>Walking</td><td>30 minuts</td>
+</tr>
+<tr>
+<td>Day 2</td><td>Swimming</td><td>45 minutes</td>
+</tr>
+<tr>
+<td>Day 3</td><td>Resting</td><td>500 minutes</td>
+</tr>
+
+</table>
+
+<H2 style="color:red;">Let's see a button</H2>
+<button onclick="addParagraphText();">Click Me</button>
+<p id="para"></p>
+<H3 style="color:blue;">Lets see another button</H3>
+<input id="name" type="text"/>
+<button onclick="displayInput();">Color It</button>
+<p id="para" style="color:blue;"></p>
+</body>
